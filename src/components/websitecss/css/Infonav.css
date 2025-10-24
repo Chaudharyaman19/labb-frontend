@@ -1,0 +1,86 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003366;
+  padding: 0px 30px;
+  color: white;
+}
+
+.nav-logo {
+  width: 198px;
+  height: 94px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-icon {
+  color: orange;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .nav-nav {
+    display: none !important;
+  }
+  .card-wrapperrr-unique {
+    padding: 20px 0px !important;
+    margin: auto;
+    border-bottom: none;
+    border-radius: 30px;
+    width: 100%;
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    padding: 7px 30px;
+    color: white;
+  }
+  .nav-right {
+    margin-top: 11px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 390px) {
+  .nav-container {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    padding: 20px -24px;
+    color: white;
+  }
+}
+@media (max-width: 344px) {
+  .nav-container {
+    width: 118% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    padding: 20px -24px;
+    color: white;
+  }
+}

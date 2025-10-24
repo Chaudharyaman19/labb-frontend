@@ -1,0 +1,130 @@
+.heroRedclif {
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Main Hero Section */
+.mainRedclif {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  padding: 30px 20px;
+}
+.areaRedclif h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.areaRedclif h3 {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+.searchRedclif {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.tryRedclif {
+  background-color: #e50914;
+  padding: 15px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+.tryRedclif:hover {
+  background-color: #f6121d;
+}
+
+/* Popular Health Checkups Section */
+.popularRedclif {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #111;
+}
+.popularRedclif h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.cardsRedclif {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.cardRedclif {
+  background-color: #1c1c1c;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+}
+.cardRedclif h3 {
+  margin-bottom: 10px;
+}
+.cardRedclif p {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+.ratingRedclif {
+  color: #f5c518;
+  font-weight: bold;
+}
+.viewPackagesRedclif {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.viewPackagesRedclif:hover {
+  background-color: #f6121d;
+  transform: translateY(-2px);
+}
+
+/* Full Image Section */
+.fullImageRedclif {
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.fullImageRedclif img {
+  width: 60%;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .cardsRedclif {
+    flex-direction: column;
+    align-items: center;
+  }
+  .areaRedclif h1 {
+    font-size: 2rem;
+  }
+  .areaRedclif h3 {
+    font-size: 1.1rem;
+  }
+  .fullImageRedclif img {
+    width: 90%;
+    height: auto;
+  }
+}

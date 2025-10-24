@@ -1,0 +1,134 @@
+.video-section {
+  padding: 80px 20px;
+  background: rgb(251, 250, 250);
+  margin-top: 100px !important;
+}
+
+.video-section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #111;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+/* Row Layout */
+.video-row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1488px;
+  margin: 0 auto;
+}
+
+/* Left - Video iframe */
+.video-container {
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.promo-video {
+  width: 100%;
+  height: 100%; /* iframe height stretch kare container ke hisaab se */
+  border: none;
+}
+
+/* Right - Content */
+.video-description {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  min-height: 400px;
+  text-align: left;
+}
+
+.video-description h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: 600;
+}
+
+.video-description p {
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Features list */
+.features-list {
+  list-style: none;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+}
+
+/* Icon Circle */
+.icon-circle {
+  display: inline-flex;
+  background: #0077cc;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  margin-right: 15px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.icon-circle:hover {
+  transform: scale(1.1);
+}
+
+.feature-icon {
+  font-size: 20px;
+  color: white;
+}
+
+.icon-circle:hover .feature-icon {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .video-row {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .video-description {
+    text-align: center;
+    min-height: auto;
+  }
+
+  .promo-video {
+    height: 300px; /* mobile pe iframe ka height fix */
+  }
+
+  .features-list li {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .mobilepage {
+    display: none;
+  }
+}

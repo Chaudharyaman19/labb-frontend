@@ -1,0 +1,190 @@
+/* System font stack for Apple-like feel */
+:root {
+  --bg: #f5f5f7;
+  --card: #ffffff;
+  --text: #1d1d1f;
+  --subtext: #6e6e73;
+  --border: #e5e5ea;
+  --ring: #007aff; /* iOS blue */
+  --button: #000000;
+  --button-text: #ffffff;
+  --radius: 14px;
+  --gap: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.proform-wrap {
+  min-height: 90vh;
+  background: #eae9e9;
+  display: grid;
+  place-items: start center;
+  padding: 48px 20px 72px;
+  color: var(--text);
+}
+
+/* Width 70% on larger screens, full on mobile */
+.proform {
+  width: 80%;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.proform:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06), 0 14px 32px rgba(0, 0, 0, 0.08);
+}
+
+.proform-header {
+  width: min(70%, 900px);
+  margin: 0 auto 16px;
+  text-align: left;
+}
+
+.proform-header h1 {
+  text-align: center;
+  font: 600 28px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 0 0 6px;
+  letter-spacing: -0.02em;
+  letter-spacing: 1px;
+  color: rgb(59, 57, 57);
+  font-size: 40px;
+}
+
+.proform-header p {
+  text-align: center;
+
+  margin: 0 0 16px;
+  color: rgb(59, 57, 57);
+  font-size: 18px;
+}
+
+/* Grid */
+.proform-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+.proform-span-2 {
+  grid-column: span 2;
+}
+
+/* Fields */
+.proform-field label {
+  display: block;
+  font-size: 13px;
+  color: black;
+  margin: 0 0 6px;
+}
+
+.proform-field input,
+.proform-field select,
+.proform-field textarea {
+  width: 100%;
+  appearance: none;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 14px 14px;
+  font-size: 16px;
+  color: black;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.proform-field input::placeholder,
+.proform-field textarea::placeholder {
+  color: #a1a1a6;
+}
+
+.proform-field input:focus,
+.proform-field select:focus,
+.proform-field textarea:focus {
+  border-color: color-mix(in oklab, var(--ring) 45%, #c7ebff);
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--ring) 18%, transparent);
+}
+
+/* Checkbox */
+.proform-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--subtext);
+}
+
+.proform-check input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  border-radius: 6px;
+  accent-color: var(--ring);
+}
+
+/* Actions */
+.proform-actions {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.proform-button {
+  background: linear-gradient(135deg, #003366, #002244);
+  border: none;
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: transform 0.06s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.proform-button:hover {
+  opacity: 0.9;
+}
+.proform-button:active {
+  transform: translateY(1px) scale(0.995);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .proform,
+  .proform-header {
+    width: 100%;
+  }
+
+  .proform {
+    padding: 20px;
+  }
+  .proform-grid {
+    grid-template-columns: 1fr;
+  }
+  .proform-span-2 {
+    grid-column: span 1;
+  }
+}
+
+/* Optional dark-mode polish */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0b0c;
+    --card: #141416;
+    --text: #f5f5f7;
+    --subtext: #a1a1a6;
+    --border: #2a2a2e;
+    --button: #ffffff;
+    --button-text: #000000;
+  }
+}

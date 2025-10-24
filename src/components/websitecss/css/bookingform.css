@@ -1,0 +1,135 @@
+/* Form container */
+.fb-layout {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Form title */
+.fb-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* Form rows */
+.fb-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+.fb-input {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+.fb-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* File upload */
+.fb-file-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px dashed #ccc;
+  font-size: 14px;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.fb-file-label:hover {
+  background-color: #e0e0e0;
+}
+
+.fb-file {
+  display: none;
+}
+
+/* Slots section */
+.fb-slots {
+  margin-bottom: 15px;
+}
+
+.fb-slots h4 {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #555;
+}
+
+.fb-slot {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.fb-slot input {
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+/* Buttons */
+.fb-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.fb-submit,
+.fb-cancel {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.fb-submit {
+  background-color: #007bff;
+  color: white;
+}
+
+.fb-submit:hover {
+  background-color: #0056b3;
+}
+
+.fb-cancel {
+  background-color: #dc3545;
+  color: white;
+}
+
+.fb-cancel:hover {
+  background-color: #a71d2a;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .fb-row {
+    flex-direction: column;
+  }
+  .fb-layout {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,38 @@
+/* Column layout container */
+.cards-column-unique {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space between cards */
+}
+
+.card-wrapperrr-unique {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pro-card-unique {
+  width: 100%;
+  max-width: 500px; /* card max width */
+}
+
+/* Remove slider buttons if present */
+.slider-btnn-unique {
+  display: none;
+}
+.mobiledoctor {
+  display: none !important;
+}
+/* Make images uniform */
+.kay-unique {
+  height: 300px !important;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .mobiledoctor {
+    display: none !important;
+  }
+  .kay-unique {
+    height: 389px !important;
+  }
+}

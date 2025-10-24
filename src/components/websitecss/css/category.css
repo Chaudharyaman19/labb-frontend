@@ -1,0 +1,56 @@
+.categories-section {
+  padding: 20px;
+}
+.categories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.icon:hover {
+  background-color: lightgreen !important;
+}
+.category-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  flex: 1 1 150px; /* min-width: 150px, grow and shrink */
+  max-width: 250px; /* optional, taaki zyada wide na ho */
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card h3 {
+  font-size: 1.1rem;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.category-card p {
+  color: #333;
+  font-size: 0.9rem;
+}
+@media (max-width: 414px) {
+  .category-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    flex: 1 1 150px;
+    max-width: 400px;
+  }
+}
+@media (max-width: 390px) {
+  .categories-section {
+    padding: 20px;
+    margin-left: 0px !important;
+  }
+}
