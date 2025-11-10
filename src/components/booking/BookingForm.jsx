@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import "../booking/bookform.css";
 import axios from "axios";
 import emailjs from "@emailjs/browser";
-import logo from "/Users/mac/Downloads/labbabbbbbb/src/assets/logo.png";
+import logo from "../../assets/logo.png";
 
 import {
   Select,

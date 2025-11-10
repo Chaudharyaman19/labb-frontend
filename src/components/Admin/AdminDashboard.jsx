@@ -15,7 +15,7 @@ import {
   Eye,
   Edit,
 } from "lucide-react";
-import "../admincss/admindashboard.css";
+import "../../components/admincss/AdminDashboard.css";
 
 const API_BASE_URL = "http://localhost:5000/api/v1/admin";
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoGeneric</title>
+
     <meta property="fb:app_id" content="1465531371326542" />
     <meta property="og:title" content="GoGeneric Healthcare App" />
     <meta
@@ -14,9 +15,25 @@
     <meta property="og:url" content="https://gogeneric.co.in" />
     <meta property="og:image" content="https://gogeneric.co.in/logo.png" />
   </head>
+
   <body>
     <div id="root"></div>
+
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
     <script type="module" src="/src/main.jsx"></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-F05EMEDN39"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-F05EMEDN39");
+    </script>
   </body>
 </html>

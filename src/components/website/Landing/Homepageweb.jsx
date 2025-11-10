@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import Consumerslider from "./Consumerslider";
 import Slider from "./Slider";
 import Phoneslider from "./Phoneslider";
-import Consumercard from "./consumercard";
+import Consumercard from "./Consumercard";
 import Category from "./Category";
 import Featuredoctor from "./Featuredoctor";
 import Mobilefeatures from "./Mobilefeatures";

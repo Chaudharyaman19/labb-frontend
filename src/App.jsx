@@ -7,7 +7,6 @@ import LoginForm from "./components/auth/LoginForm.jsx";
 import RegisterForm from "./components/auth/RegisterForm.jsx";
 import Sendotp from "./components/auth/Sendotp.jsx";
 import Forgotpass from "./components/auth/Forgotpass.jsx";
-
 import PackagesPage from "./pages/PackagesPage.jsx";
 import BookAppointmentPage from "./pages/BookAppointmentPage.jsx";
 import BookingsPage from "./pages/BookingsPage.jsx";
