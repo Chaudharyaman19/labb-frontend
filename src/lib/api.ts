@@ -1,5 +1,5 @@
 // API Configuration and Helper Functions
-const BASE_URL = "http://localhost:5000/api/v1";
+const BASE_URL = "https://labb-backend.vercel.app/api/v1";
 const API_KEY = "your-secure-api-key";
 
 export class ApiClient {

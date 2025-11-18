@@ -12,7 +12,7 @@ function Sendotp() {
   const sendOtp = async () => {
     try {
       const res = await axios.put(
-        "http://localhost:5000/api/v1/userapp/auth/send-otp",
+        "https://labb-backend.vercel.app/api/v1/userapp/auth/send-otp",
         {
           phone,
         }

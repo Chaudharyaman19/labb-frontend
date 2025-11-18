@@ -208,16 +208,13 @@ function BookingForm({ selectedPackage }) {
 
     try {
       const paymentResponse = await handlePay();
-
       const verified = await verifyPayment(paymentResponse);
-
       navigate(`/payment/success/${paymentResponse.razorpay_payment_id}`, {
         state: {
           amount: selectedPackageData.package_center_prices?.discounted_price,
           packageName: selectedPackageData.name,
         },
       });
-
       if (!verified) {
         console.warn("Payment verified partially (email or backend failed).");
       }
@@ -261,7 +258,7 @@ function BookingForm({ selectedPackage }) {
 
       axios
         .post(
-          "http://localhost:5000/api/v1/dsa/payments/checkout",
+          "https://labb-backend.vercel.app/api/v1/dsa/payments/checkout",
           {
             booking_date: format(date, "yyyy-MM-dd"),
             collection_date: format(collectionDate, "yyyy-MM-dd"),
@@ -309,7 +306,7 @@ function BookingForm({ selectedPackage }) {
     try {
       try {
         await axios.post(
-          "http://localhost:5000/api/v1/dsa/payments/verify",
+          "https://labb-backend.vercel.app/api/v1/dsa/payments/verify",
           response,
           {
             headers: {

@@ -20,7 +20,7 @@ function Forgotpass() {
 
     try {
       const res = await axios.put(
-        "http://localhost:5000/api/v1/userapp/auth/forgot-password",
+        "https://labb-backend.vercel.app/api/v1/userapp/auth/forgot-password",
         { phone, code, password, confirmPassword }
       );
       setMessage("Password reset successfully ✅");

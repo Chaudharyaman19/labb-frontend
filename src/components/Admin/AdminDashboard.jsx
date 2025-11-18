@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 import "../../components/admincss/AdminDashboard.css";
 
-const API_BASE_URL = "http://localhost:5000/api/v1/admin";
+const API_BASE_URL = "https://labb-backend.vercel.app/api/v1/admin";
 
 const AdminDashboard = () => {
   const [currentView, setCurrentView] = useState("dashboard");
